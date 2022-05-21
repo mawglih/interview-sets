@@ -1,0 +1,237 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+.header-up {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.header-down-container {
+  width: 100vw;
+}
+.header-down {
+  background-color: var(--black);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.read-button {
+  width: 150px;
+  padding: 10px 20px;
+  border: solid 1px var(--buttons);
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.moto1 {
+  font-weight: 500;
+  margin: 0;
+}
+.moto2 {
+  color: var(--medgray);
+  font-weight: 600;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 40%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding: 10px;
+}
+.modal-container {
+  position: relative;
+}
+.modal-close {
+  position:absolute;
+  top: 0;
+  right: 0;
+}
+.modal-close:after{
+  display: inline-block;
+  content: "\00d7";
+}
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.signup-form>h2 {
+  text-align: center;
+}
+.signup-form div {
+  width: 80%;
+}
+input{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--medgray);
+  background-color: var(--lightgray);
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+::placeholder {
+  color: var(--darkgray);
+}
+.signup-button {
+  width: 100%;
+  background-color: var(--buttons);
+  color: white;
+  font-weight: 700;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--buttons);
+
+}
+.header-up {
+  height: 30px;
+}
+.header-up > p {
+  font-weight: 800;
+}
+.signup-div {
+  color: var(--buttons);
+  font-weight: 600;
+}
+.header-down {
+  height: 50vh;
+}
+.read-button {
+  background-color: var(--buttons);
+  color: white;
+  font-weight: 600;
+}
+.hero-container {
+  background-color: var(--lightgray);
+  width: 100vw;
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-container > h3 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.hero-container > p {
+  text-align: center;
+  font-weight: 500;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lightgray);
+  width: 100vw;
+  padding: 40px 100px;
+}
+.footer-container > h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.stories-container {
+  margin-top: 80px;
+}
+.stories-title {
+  background-color: var(--black);
+  width: 100vw;
+  padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stories-title > h2 {
+  color: white;
+  font-weight: 500;
+}
+.stories-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row-card-image, .row-card-text {
+  width: 40vw;
+  height: 40vw;
+  margin-right: 20px;
+}
+.row-card-image {
+  background-color: var(--darkgray);
+}
+.firstclass, .secondclass {
+  display: flex;
+  padding: 40px 80px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.secondclass {
+  flex-direction: row-reverse;
+}
+.row-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+.row-card-text >h3 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.row-card-text > p {
+  font-weight: 400;
+  color: var(--darkgray);
+}
+.firstclass .row-card-text {
+  padding-right: 100px;
+}
+.secondclass .row-card-text {
+  padding-left: 100px;
+}
