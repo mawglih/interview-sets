@@ -1,7 +1,7 @@
 const string1 = "ab#z"
 const string2 = "az#z"
 
-var backspaceCompare = function(S, T) {
+const backspaceCompare = (S, T) => {
     let p1 = S.length - 1, p2 = T.length - 1;
     
     while(p1 >= 0 || p2 >= 0) {

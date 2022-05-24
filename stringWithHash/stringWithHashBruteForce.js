@@ -1,7 +1,7 @@
 const string1 = "ab#z"
 const string2 = "az#z"
 
-const buildString = function(string) {
+const buildString = (string) => {
     const builtString = [];
     for(let p = 0; p < string.length; p++) {
         if(string[p] !== '#') {
@@ -14,7 +14,7 @@ const buildString = function(string) {
     return builtString;
 }
 
-var backspaceCompare = function(S, T) {
+const backspaceCompare = (S, T) => {
     const finalS = buildString(S);
     const finalT = buildString(T);
     
